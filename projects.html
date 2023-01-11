@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="description" content="portfolio" />
+    <meta
+      name="keywords"
+      content="software developer, software development, Canada, portfolio"
+    />
+    <meta name="author" content="Kyle Snow" />
+    <meta name="software" content="visual studio code" />
+    <title>Portfolio | Live Examples</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="banner" id="top">
+        <h2 class="title">Kyle Snow</h2>
+        <nav class="main-nav">
+          <ul>
+            <li class="btn">
+              <a href="index.html">home</a>
+            </li>
+            <li class="btn">
+              <a href="https://github.com/Ksnow13">github</a>
+            </li>
+            <li class="btn">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div class="intro">
+        <h1 class="intro-title">SAMPLES</h1>
+        <p>
+          Here I will be demonstrating some functions that I have implemented in
+          my projects. These examples will show my use of DOM programming and
+          utilizing Application Programming Interface to fetch and manipulate
+          data.
+        </p>
+      </div>
+      <div class="example-1">
+        <h2 class="example-1-title">Bitcoin Value</h2>
+        <p>
+          In this function I Access a web service at
+          <a href="https://www.coindesk.com/">coindesk.com</a>
+          to obtain an API that allows me to fetch the current value of Bitcion.
+          This function will automatically update the value every minute, you
+          can also click the button to make sure its up to date.
+        </p>
+      </div>
+      <div id="output-1-container">
+        <p id="output-1"></p>
+        <button id="output-1-value">get current value</button>
+        <span id="output-1-message"></span>
+      </div>
+      <div class="example-1">
+        <h2 class="example-1-title">Joke Generater</h2>
+        <p>
+          This function Generates Chuck Norris Jokes using an API from
+          <a href="https://api.chucknorris.io/">chucknorris.io</a>. In this
+          function you can either get a random joke, or get a random joke from a
+          specific category.
+        </p>
+      </div>
+
+      <div id="output-2-container">
+        <div class="b1">
+          <form class="f1">
+            <button id="get-r-joke">Get random joke</button>
+          </form>
+
+          <p id="joke"></p>
+        </div>
+        <div class="b2">
+          <form class="f2">
+            <button id="get-cate">Show categories</button>
+          </form>
+          <p id="cate"></p>
+        </div>
+
+        <form class="f3">
+          <div>
+            <input
+              type="text"
+              id="cateinput"
+              placeholder="Enter category here"
+            />
+            <button id="cate-texted">get joke</button>
+          </div>
+        </form>
+        <p id="catejoke"></p>
+      </div>
+      <div class="example-1">
+        <h2 class="example-1-title">Generate images</h2>
+        <p>
+          When this page gets opened the following function fetches a list of
+          available dog breeds and updates the function if new breeds were added
+          or removed from the API. If the user picks a breed and clicks the
+          submit button the function will display photos of that breed.
+        </p>
+      </div>
+
+      <div class="input-container">
+        <div id="box1">
+          <form id="dogs-form" action="#">
+            <label for="breeds">Select a breed</label>
+            <select name="breeds" id="breeds" tabindex="1"></select>
+            <label for="image-count">Number of photos</label>
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              id="image-count"
+              tabindex="2"
+            />
+
+            <input type="submit" id="submit" tabindex="3" />
+          </form>
+        </div>
+      </div>
+      <div class="message-container">
+        <p id="notify"></p>
+      </div>
+
+      <div class="output-container">
+        <p id="output"></p>
+      </div>
+
+      <div>
+        <h2 class="bottom-title">Thanks for stopping by</h2>
+      </div>
+      <div class="bottom-container">
+        <section class="bottom">
+          <h6>| &nbsp;</h6>
+          <nav class="bottom-nav">
+            <ul>
+              <li class="btn">
+                <a href="#top">Back to top</a>
+              </li>
+              <li class="btn">
+                <a href="index.html">home</a>
+              </li>
+              <li class="btn">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <h6>&nbsp; |</h6>
+        </section>
+      </div>
+    </div>
+    <script src="./scripts/projects.js"></script>
+  </body>
+</html>
